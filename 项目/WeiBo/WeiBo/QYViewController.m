@@ -17,6 +17,11 @@
 @end
 
 @implementation QYViewController
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kloginsuccess object:nil];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

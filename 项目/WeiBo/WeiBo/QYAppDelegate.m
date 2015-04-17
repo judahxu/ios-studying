@@ -33,11 +33,7 @@
 
 
 #pragma mark - WeiBoSDK delegate
-- (void)didReceiveWeiboRequest:(WBBaseRequest *)request;
-{
-    
 
-}
 -(void)didReceiveWeiboResponse:(WBBaseResponse *)response{
     if ([response isKindOfClass:[WBAuthorizeResponse class]]) {
         WBAuthorizeResponse *autoResponse = (WBAuthorizeResponse *)response;

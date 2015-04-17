@@ -15,8 +15,8 @@
     #import <Foundation/Foundation.h>
 #endif
 
-#define kAppKey @"854696477"
+#define kAppKey @"2879943184"
 
-#define kRedirectURI @"http://biancheng.me"
+#define kRedirectURI @"http://judahxu.com"
 
 #define kloginsuccess @"kloginsuccess"
