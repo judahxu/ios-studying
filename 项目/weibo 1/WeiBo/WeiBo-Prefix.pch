@@ -15,7 +15,7 @@
     #import <Foundation/Foundation.h>
 #endif
 
-#define kAppKey @"854696477"
-#define kRedirectURI @"http://biancheng.me"
+#define kAppKey @"2879943184"
+#define kRedirectURI @"http://judahxu.com"
 #define kAccessToken @"access_token"
-#define kAppSecret @"6a096d77c88fb1c10ef2704976e5c0fd"
+#define kAppSecret @"6f690510555fd1d87cd130251f2bcb22"

@@ -23,7 +23,7 @@
 }
 
 -(void)loginSeccess:(NSNotification *)noti{
-    
+    // self.token = noti.object;
 }
 
 
