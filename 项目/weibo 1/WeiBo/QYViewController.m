@@ -9,7 +9,7 @@
 #import "QYViewController.h"
 
 @interface QYViewController ()
-
+@property NSString *token;
 @end
 
 @implementation QYViewController
@@ -23,7 +23,8 @@
 }
 
 -(void)loginSeccess:(NSNotification *)noti{
-    // self.token = noti.object;
+     //self.token = noti.object;
+    
 }
 
 
