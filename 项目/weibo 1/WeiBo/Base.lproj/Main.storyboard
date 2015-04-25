@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Cxp-w7-14z">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="statusCellID" id="Cxp-w7-14z">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cxp-w7-14z" id="c3M-O9-YEZ">
@@ -29,6 +29,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="ZyZ-L8-ANK">
+                        <barButtonItem key="leftBarButtonItem" title="发微博" id="Vxn-1A-gHQ">
+                            <connections>
+                                <segue destination="muL-IE-RP6" kind="modal" identifier="sendMassage" id="X4I-NE-hXI"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="登陆" id="0Qt-1h-MIY">
                             <connections>
                                 <segue destination="EJf-rH-QbJ" kind="modal" id="NY9-yn-sft"/>
@@ -38,7 +43,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIp-qD-OLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97" y="-257"/>
+            <point key="canvasLocation" x="-414" y="-257"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iue-k8-ccl">
@@ -48,12 +53,66 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="21S-Iv-LPb" kind="relationship" relationship="rootViewController" id="k7f-k9-9q7"/>
+                        <segue destination="21S-Iv-LPb" kind="relationship" relationship="rootViewController" id="1cx-Kh-doL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GLo-y9-lVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448" y="-269"/>
+            <point key="canvasLocation" x="125" y="-767"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Op-QF-1Dr">
+            <objects>
+                <navigationController id="muL-IE-RP6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZDK-Jr-4VI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HWF-jo-uSt" kind="relationship" relationship="rootViewController" id="aan-sg-pGO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alC-3f-Td3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="-59"/>
+        </scene>
+        <!--Sendweibo-->
+        <scene sceneID="zI3-qj-gW0">
+            <objects>
+                <viewController id="HWF-jo-uSt" customClass="QYSendweibo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f0r-0e-aOv"/>
+                        <viewControllerLayoutGuide type="bottom" id="vX2-Rd-YEl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gr1-bk-KwJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rcQ-mz-7JF">
+                                <rect key="frame" x="0.0" y="72" width="320" height="303"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kRf-k1-Utu">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="Zpf-si-bln"/>
+                        <barButtonItem key="rightBarButtonItem" title="发送" id="MLn-Ja-c9w">
+                            <connections>
+                                <action selector="send:" destination="HWF-jo-uSt" id="yvj-QX-qoj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="rcQ-mz-7JF" id="T1Y-ZQ-1AP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxN-TD-d4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552" y="-49"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="hzG-eG-33V">
@@ -90,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbY-uB-aO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="-719"/>
+            <point key="canvasLocation" x="552" y="-767"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AtN-oo-GPG">

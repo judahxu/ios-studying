@@ -20,6 +20,7 @@
 
 @implementation QYLoginViewController
 - (IBAction)dismiss:(id)sender {
+    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -74,7 +75,8 @@
             NSLog(@"%@", responseObject);
             
             [[NSNotificationCenter defaultCenter] postNotificationName:@"loginSeccess" object:responseObject[kAccessToken]];
-            
+            [self dismissViewControllerAnimated:YES completion:nil];
+
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"%@", error);
         }];

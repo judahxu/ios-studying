@@ -1,0 +1,35 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+#define kAppKey @"2879943184"
+#define kRedirectURI @"http://judahxu.com"
+#define kAccessToken @"access_token"
+#define kAppSecret @"6f690510555fd1d87cd130251f2bcb22"
+
+
+//notifation
+
+#define kLoginSuccess @"loginSeccess"
+#define kLogout @"logout"
+
+
+//dic key
+
+#define kAccess_token @"access_token"
+#define kExpires_in @"expires_in"
+#define kUid @"uid"
