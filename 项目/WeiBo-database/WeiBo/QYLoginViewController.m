@@ -74,9 +74,11 @@
         [manager POST:@"https://api.weibo.com/oauth2/access_token" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSLog(@"%@", responseObject);
             
-            [[NSNotificationCenter defaultCenter] postNotificationName:kLoginSuccess object:responseObject[kAccessToken]];
             //保存登陆成功后的信息
             [[QYAccountModel accountModel] loginSuccess:responseObject];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:kLoginSuccess object:responseObject[kAccessToken]];
+            
             [self dismissViewControllerAnimated:YES completion:nil];
             
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -92,10 +94,6 @@
     }
     return YES;
     
-}
-- (IBAction)dmiss:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-
 }
 
 

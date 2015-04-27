@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Kle-6n-sCD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Kle-6n-sCD">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--GuideVC-->
@@ -19,6 +18,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQl-bc-XbA">
                                 <rect key="frame" x="137" y="504" width="60" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="引导结束">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -63,6 +63,7 @@
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqf-tt-EkA">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="iRN-LU-K8a" id="oba-tN-8KC"/>
@@ -80,7 +81,7 @@
                     <navigationItem key="navigationItem" id="yWF-pc-dQl">
                         <barButtonItem key="leftBarButtonItem" title="取消" id="NEw-pC-X20">
                             <connections>
-                                <action selector="dmiss:" destination="iRN-LU-K8a" id="xwc-Zk-i4t"/>
+                                <action selector="dismiss:" destination="iRN-LU-K8a" id="reL-48-jaT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -114,7 +115,7 @@
             </objects>
             <point key="canvasLocation" x="-423" y="-589"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller - Item 2-->
         <scene sceneID="6wZ-Za-zKa">
             <objects>
                 <viewController id="sxQ-7n-gDW" sceneMemberID="viewController">
@@ -133,7 +134,7 @@
             </objects>
             <point key="canvasLocation" x="623" y="517"/>
         </scene>
-        <!--消息-->
+        <!--Message Table View Controller - 消息-->
         <scene sceneID="hvR-kW-j7X">
             <objects>
                 <tableViewController id="CHz-EJ-FpF" customClass="QYMessageTableViewController" sceneMemberID="viewController">
@@ -300,6 +301,7 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EDF-w8-NME">
                                             <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="2SA-u6-gsh"/>
                                                 <constraint firstAttribute="width" constant="50" id="2pQ-ug-kSa"/>
@@ -307,6 +309,7 @@
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giB-mv-xWg">
                                             <rect key="frame" x="66" y="20" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="SdT-IS-yha"/>
                                             </constraints>
@@ -316,6 +319,7 @@
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="292" translatesAutoresizingMaskIntoConstraints="NO" id="aWg-FO-nws">
                                             <rect key="frame" x="8" y="66" width="292" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -350,7 +354,7 @@
             </objects>
             <point key="canvasLocation" x="954" y="-1723"/>
         </scene>
-        <!--发现-->
+        <!--Navigation Controller - 发现-->
         <scene sceneID="efC-LZ-9Wl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XoK-AF-qvt" sceneMemberID="viewController">
@@ -371,7 +375,7 @@
             </objects>
             <point key="canvasLocation" x="1912" y="-909"/>
         </scene>
-        <!--我-->
+        <!--Navigation Controller - 我-->
         <scene sceneID="cAd-MZ-2u8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZLc-bU-Jel" sceneMemberID="viewController">
@@ -392,7 +396,7 @@
             </objects>
             <point key="canvasLocation" x="1335" y="90"/>
         </scene>
-        <!--首页-->
+        <!--Navigation Controller - 首页-->
         <scene sceneID="F2K-LV-opg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p0f-jG-hQV" sceneMemberID="viewController">

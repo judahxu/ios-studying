@@ -17,6 +17,12 @@
         //设置属性
         //设置user属性
         NSDictionary *userInfo = statusInfo[kStatusUserInfo];
+        
+        //如果是从数据库中查询出来，则为nsdata类型
+        if ([userInfo isKindOfClass:[NSData class]]) {
+            userInfo = [NSKeyedUnarchiver unarchiveObjectWithData:(NSData *)userInfo];
+        }
+        
         self.user = [[QYUserModel alloc] initWithDictionary:userInfo];
         self.source = statusInfo[kStatusSource];
         
@@ -38,7 +44,13 @@
         
         //根据有无转发微博，创建微博对象
         NSDictionary *reStatusInfo = statusInfo[kStatusRetweetStatus];
-        if (reStatusInfo) {
+        
+        if (reStatusInfo && ![reStatusInfo isKindOfClass:[NSNull class]]) {
+            
+            //如果是从数据库中查询出来，则为nsdata类型
+            if ([reStatusInfo isKindOfClass:[NSData class]]) {
+                reStatusInfo = [NSKeyedUnarchiver unarchiveObjectWithData:(NSData *)reStatusInfo];
+            }
             self.reStatus = [[QYStatusModel alloc] initWithDictionary:reStatusInfo];
         }
         
@@ -83,7 +95,7 @@
     NSTextCheckingResult *result = [expression firstMatchInString:string options:0 range:NSMakeRange(0, string.length -1)];
     
     //取出子字符串
-    if (result) { 
+    if (result) {
         NSRange range = [result rangeAtIndex:0];
         soure = [string substringWithRange:NSMakeRange(range.location + 1, range.length - 2)];
     }
