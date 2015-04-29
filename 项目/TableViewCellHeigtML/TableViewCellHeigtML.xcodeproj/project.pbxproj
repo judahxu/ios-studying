@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCEA45F11AEF2FF300F0AB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45F01AEF2FF300F0AB26 /* Foundation.framework */; };
+		CCEA45F31AEF2FF300F0AB26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45F21AEF2FF300F0AB26 /* CoreGraphics.framework */; };
+		CCEA45F51AEF2FF300F0AB26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45F41AEF2FF300F0AB26 /* UIKit.framework */; };
+		CCEA45FB1AEF2FF300F0AB26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCEA45F91AEF2FF300F0AB26 /* InfoPlist.strings */; };
+		CCEA45FD1AEF2FF300F0AB26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA45FC1AEF2FF300F0AB26 /* main.m */; };
+		CCEA46011AEF2FF300F0AB26 /* QYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA46001AEF2FF300F0AB26 /* QYAppDelegate.m */; };
+		CCEA46041AEF2FF300F0AB26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEA46021AEF2FF300F0AB26 /* Main.storyboard */; };
+		CCEA46071AEF2FF300F0AB26 /* QYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA46061AEF2FF300F0AB26 /* QYViewController.m */; };
+		CCEA46091AEF2FF300F0AB26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEA46081AEF2FF300F0AB26 /* Images.xcassets */; };
+		CCEA46101AEF2FF300F0AB26 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA460F1AEF2FF300F0AB26 /* XCTest.framework */; };
+		CCEA46111AEF2FF300F0AB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45F01AEF2FF300F0AB26 /* Foundation.framework */; };
+		CCEA46121AEF2FF300F0AB26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45F41AEF2FF300F0AB26 /* UIKit.framework */; };
+		CCEA461A1AEF2FF300F0AB26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCEA46181AEF2FF300F0AB26 /* InfoPlist.strings */; };
+		CCEA461C1AEF2FF300F0AB26 /* TableViewCellHeigtMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA461B1AEF2FF300F0AB26 /* TableViewCellHeigtMLTests.m */; };
+		CCEA46271AEF302B00F0AB26 /* QYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA46261AEF302B00F0AB26 /* QYTableViewCell.m */; };
+		CCEA462A1AEF33D100F0AB26 /* NSString+stringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA46291AEF33D100F0AB26 /* NSString+stringSize.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCEA46131AEF2FF300F0AB26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCEA45E51AEF2FF300F0AB26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCEA45EC1AEF2FF300F0AB26;
+			remoteInfo = TableViewCellHeigtML;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCEA45ED1AEF2FF300F0AB26 /* TableViewCellHeigtML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCellHeigtML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEA45F01AEF2FF300F0AB26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CCEA45F21AEF2FF300F0AB26 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CCEA45F41AEF2FF300F0AB26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CCEA45F81AEF2FF300F0AB26 /* TableViewCellHeigtML-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCellHeigtML-Info.plist"; sourceTree = "<group>"; };
+		CCEA45FA1AEF2FF300F0AB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCEA45FC1AEF2FF300F0AB26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCEA45FE1AEF2FF300F0AB26 /* TableViewCellHeigtML-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewCellHeigtML-Prefix.pch"; sourceTree = "<group>"; };
+		CCEA45FF1AEF2FF300F0AB26 /* QYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYAppDelegate.h; sourceTree = "<group>"; };
+		CCEA46001AEF2FF300F0AB26 /* QYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYAppDelegate.m; sourceTree = "<group>"; };
+		CCEA46031AEF2FF300F0AB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCEA46051AEF2FF300F0AB26 /* QYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYViewController.h; sourceTree = "<group>"; };
+		CCEA46061AEF2FF300F0AB26 /* QYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYViewController.m; sourceTree = "<group>"; };
+		CCEA46081AEF2FF300F0AB26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCEA460E1AEF2FF300F0AB26 /* TableViewCellHeigtMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewCellHeigtMLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEA460F1AEF2FF300F0AB26 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CCEA46171AEF2FF300F0AB26 /* TableViewCellHeigtMLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCellHeigtMLTests-Info.plist"; sourceTree = "<group>"; };
+		CCEA46191AEF2FF300F0AB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCEA461B1AEF2FF300F0AB26 /* TableViewCellHeigtMLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellHeigtMLTests.m; sourceTree = "<group>"; };
+		CCEA46251AEF302B00F0AB26 /* QYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYTableViewCell.h; sourceTree = "<group>"; };
+		CCEA46261AEF302B00F0AB26 /* QYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYTableViewCell.m; sourceTree = "<group>"; };
+		CCEA46281AEF33D100F0AB26 /* NSString+stringSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+stringSize.h"; sourceTree = "<group>"; };
+		CCEA46291AEF33D100F0AB26 /* NSString+stringSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+stringSize.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCEA45EA1AEF2FF300F0AB26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA45F31AEF2FF300F0AB26 /* CoreGraphics.framework in Frameworks */,
+				CCEA45F51AEF2FF300F0AB26 /* UIKit.framework in Frameworks */,
+				CCEA45F11AEF2FF300F0AB26 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA460B1AEF2FF300F0AB26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA46101AEF2FF300F0AB26 /* XCTest.framework in Frameworks */,
+				CCEA46121AEF2FF300F0AB26 /* UIKit.framework in Frameworks */,
+				CCEA46111AEF2FF300F0AB26 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCEA45E41AEF2FF300F0AB26 = {
+			isa = PBXGroup;
+			children = (
+				CCEA45F61AEF2FF300F0AB26 /* TableViewCellHeigtML */,
+				CCEA46151AEF2FF300F0AB26 /* TableViewCellHeigtMLTests */,
+				CCEA45EF1AEF2FF300F0AB26 /* Frameworks */,
+				CCEA45EE1AEF2FF300F0AB26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCEA45EE1AEF2FF300F0AB26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA45ED1AEF2FF300F0AB26 /* TableViewCellHeigtML.app */,
+				CCEA460E1AEF2FF300F0AB26 /* TableViewCellHeigtMLTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCEA45EF1AEF2FF300F0AB26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA45F01AEF2FF300F0AB26 /* Foundation.framework */,
+				CCEA45F21AEF2FF300F0AB26 /* CoreGraphics.framework */,
+				CCEA45F41AEF2FF300F0AB26 /* UIKit.framework */,
+				CCEA460F1AEF2FF300F0AB26 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCEA45F61AEF2FF300F0AB26 /* TableViewCellHeigtML */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA45FF1AEF2FF300F0AB26 /* QYAppDelegate.h */,
+				CCEA46001AEF2FF300F0AB26 /* QYAppDelegate.m */,
+				CCEA46021AEF2FF300F0AB26 /* Main.storyboard */,
+				CCEA46051AEF2FF300F0AB26 /* QYViewController.h */,
+				CCEA46061AEF2FF300F0AB26 /* QYViewController.m */,
+				CCEA46081AEF2FF300F0AB26 /* Images.xcassets */,
+				CCEA45F71AEF2FF300F0AB26 /* Supporting Files */,
+				CCEA46251AEF302B00F0AB26 /* QYTableViewCell.h */,
+				CCEA46261AEF302B00F0AB26 /* QYTableViewCell.m */,
+				CCEA46281AEF33D100F0AB26 /* NSString+stringSize.h */,
+				CCEA46291AEF33D100F0AB26 /* NSString+stringSize.m */,
+			);
+			path = TableViewCellHeigtML;
+			sourceTree = "<group>";
+		};
+		CCEA45F71AEF2FF300F0AB26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA45F81AEF2FF300F0AB26 /* TableViewCellHeigtML-Info.plist */,
+				CCEA45F91AEF2FF300F0AB26 /* InfoPlist.strings */,
+				CCEA45FC1AEF2FF300F0AB26 /* main.m */,
+				CCEA45FE1AEF2FF300F0AB26 /* TableViewCellHeigtML-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCEA46151AEF2FF300F0AB26 /* TableViewCellHeigtMLTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA461B1AEF2FF300F0AB26 /* TableViewCellHeigtMLTests.m */,
+				CCEA46161AEF2FF300F0AB26 /* Supporting Files */,
+			);
+			path = TableViewCellHeigtMLTests;
+			sourceTree = "<group>";
+		};
+		CCEA46161AEF2FF300F0AB26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA46171AEF2FF300F0AB26 /* TableViewCellHeigtMLTests-Info.plist */,
+				CCEA46181AEF2FF300F0AB26 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCEA45EC1AEF2FF300F0AB26 /* TableViewCellHeigtML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEA461F1AEF2FF300F0AB26 /* Build configuration list for PBXNativeTarget "TableViewCellHeigtML" */;
+			buildPhases = (
+				CCEA45E91AEF2FF300F0AB26 /* Sources */,
+				CCEA45EA1AEF2FF300F0AB26 /* Frameworks */,
+				CCEA45EB1AEF2FF300F0AB26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewCellHeigtML;
+			productName = TableViewCellHeigtML;
+			productReference = CCEA45ED1AEF2FF300F0AB26 /* TableViewCellHeigtML.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCEA460D1AEF2FF300F0AB26 /* TableViewCellHeigtMLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEA46221AEF2FF300F0AB26 /* Build configuration list for PBXNativeTarget "TableViewCellHeigtMLTests" */;
+			buildPhases = (
+				CCEA460A1AEF2FF300F0AB26 /* Sources */,
+				CCEA460B1AEF2FF300F0AB26 /* Frameworks */,
+				CCEA460C1AEF2FF300F0AB26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCEA46141AEF2FF300F0AB26 /* PBXTargetDependency */,
+			);
+			name = TableViewCellHeigtMLTests;
+			productName = TableViewCellHeigtMLTests;
+			productReference = CCEA460E1AEF2FF300F0AB26 /* TableViewCellHeigtMLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCEA45E51AEF2FF300F0AB26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QY;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hnqingyun.com;
+				TargetAttributes = {
+					CCEA460D1AEF2FF300F0AB26 = {
+						TestTargetID = CCEA45EC1AEF2FF300F0AB26;
+					};
+				};
+			};
+			buildConfigurationList = CCEA45E81AEF2FF300F0AB26 /* Build configuration list for PBXProject "TableViewCellHeigtML" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCEA45E41AEF2FF300F0AB26;
+			productRefGroup = CCEA45EE1AEF2FF300F0AB26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCEA45EC1AEF2FF300F0AB26 /* TableViewCellHeigtML */,
+				CCEA460D1AEF2FF300F0AB26 /* TableViewCellHeigtMLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCEA45EB1AEF2FF300F0AB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA46091AEF2FF300F0AB26 /* Images.xcassets in Resources */,
+				CCEA45FB1AEF2FF300F0AB26 /* InfoPlist.strings in Resources */,
+				CCEA46041AEF2FF300F0AB26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA460C1AEF2FF300F0AB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA461A1AEF2FF300F0AB26 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCEA45E91AEF2FF300F0AB26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA462A1AEF33D100F0AB26 /* NSString+stringSize.m in Sources */,
+				CCEA46011AEF2FF300F0AB26 /* QYAppDelegate.m in Sources */,
+				CCEA46271AEF302B00F0AB26 /* QYTableViewCell.m in Sources */,
+				CCEA45FD1AEF2FF300F0AB26 /* main.m in Sources */,
+				CCEA46071AEF2FF300F0AB26 /* QYViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA460A1AEF2FF300F0AB26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA461C1AEF2FF300F0AB26 /* TableViewCellHeigtMLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCEA46141AEF2FF300F0AB26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCEA45EC1AEF2FF300F0AB26 /* TableViewCellHeigtML */;
+			targetProxy = CCEA46131AEF2FF300F0AB26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCEA45F91AEF2FF300F0AB26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEA45FA1AEF2FF300F0AB26 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CCEA46021AEF2FF300F0AB26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEA46031AEF2FF300F0AB26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCEA46181AEF2FF300F0AB26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEA46191AEF2FF300F0AB26 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCEA461D1AEF2FF300F0AB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCEA461E1AEF2FF300F0AB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCEA46201AEF2FF300F0AB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewCellHeigtML/TableViewCellHeigtML-Prefix.pch";
+				INFOPLIST_FILE = "TableViewCellHeigtML/TableViewCellHeigtML-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CCEA46211AEF2FF300F0AB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewCellHeigtML/TableViewCellHeigtML-Prefix.pch";
+				INFOPLIST_FILE = "TableViewCellHeigtML/TableViewCellHeigtML-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CCEA46231AEF2FF300F0AB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TableViewCellHeigtML.app/TableViewCellHeigtML";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewCellHeigtML/TableViewCellHeigtML-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TableViewCellHeigtMLTests/TableViewCellHeigtMLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CCEA46241AEF2FF300F0AB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TableViewCellHeigtML.app/TableViewCellHeigtML";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewCellHeigtML/TableViewCellHeigtML-Prefix.pch";
+				INFOPLIST_FILE = "TableViewCellHeigtMLTests/TableViewCellHeigtMLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCEA45E81AEF2FF300F0AB26 /* Build configuration list for PBXProject "TableViewCellHeigtML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEA461D1AEF2FF300F0AB26 /* Debug */,
+				CCEA461E1AEF2FF300F0AB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCEA461F1AEF2FF300F0AB26 /* Build configuration list for PBXNativeTarget "TableViewCellHeigtML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEA46201AEF2FF300F0AB26 /* Debug */,
+				CCEA46211AEF2FF300F0AB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCEA46221AEF2FF300F0AB26 /* Build configuration list for PBXNativeTarget "TableViewCellHeigtMLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEA46231AEF2FF300F0AB26 /* Debug */,
+				CCEA46241AEF2FF300F0AB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCEA45E51AEF2FF300F0AB26 /* Project object */;
+}

@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCEA45AD1AEF256100F0AB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45AC1AEF256100F0AB26 /* Foundation.framework */; };
+		CCEA45AF1AEF256100F0AB26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45AE1AEF256100F0AB26 /* CoreGraphics.framework */; };
+		CCEA45B11AEF256100F0AB26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45B01AEF256100F0AB26 /* UIKit.framework */; };
+		CCEA45B71AEF256100F0AB26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCEA45B51AEF256100F0AB26 /* InfoPlist.strings */; };
+		CCEA45B91AEF256100F0AB26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA45B81AEF256100F0AB26 /* main.m */; };
+		CCEA45BD1AEF256100F0AB26 /* QYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA45BC1AEF256100F0AB26 /* QYAppDelegate.m */; };
+		CCEA45C01AEF256100F0AB26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEA45BE1AEF256100F0AB26 /* Main.storyboard */; };
+		CCEA45C31AEF256100F0AB26 /* QYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA45C21AEF256100F0AB26 /* QYViewController.m */; };
+		CCEA45C51AEF256100F0AB26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEA45C41AEF256100F0AB26 /* Images.xcassets */; };
+		CCEA45CC1AEF256100F0AB26 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45CB1AEF256100F0AB26 /* XCTest.framework */; };
+		CCEA45CD1AEF256100F0AB26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45AC1AEF256100F0AB26 /* Foundation.framework */; };
+		CCEA45CE1AEF256100F0AB26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEA45B01AEF256100F0AB26 /* UIKit.framework */; };
+		CCEA45D61AEF256100F0AB26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCEA45D41AEF256100F0AB26 /* InfoPlist.strings */; };
+		CCEA45D81AEF256100F0AB26 /* TableViewCellHeightALTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA45D71AEF256100F0AB26 /* TableViewCellHeightALTests.m */; };
+		CCEA45E31AEF25D300F0AB26 /* QYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA45E21AEF25D300F0AB26 /* QYTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCEA45CF1AEF256100F0AB26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCEA45A11AEF256100F0AB26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCEA45A81AEF256100F0AB26;
+			remoteInfo = TableViewCellHeightAL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCEA45A91AEF256100F0AB26 /* TableViewCellHeightAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCellHeightAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEA45AC1AEF256100F0AB26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CCEA45AE1AEF256100F0AB26 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CCEA45B01AEF256100F0AB26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CCEA45B41AEF256100F0AB26 /* TableViewCellHeightAL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCellHeightAL-Info.plist"; sourceTree = "<group>"; };
+		CCEA45B61AEF256100F0AB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCEA45B81AEF256100F0AB26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCEA45BA1AEF256100F0AB26 /* TableViewCellHeightAL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewCellHeightAL-Prefix.pch"; sourceTree = "<group>"; };
+		CCEA45BB1AEF256100F0AB26 /* QYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYAppDelegate.h; sourceTree = "<group>"; };
+		CCEA45BC1AEF256100F0AB26 /* QYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYAppDelegate.m; sourceTree = "<group>"; };
+		CCEA45BF1AEF256100F0AB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCEA45C11AEF256100F0AB26 /* QYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYViewController.h; sourceTree = "<group>"; };
+		CCEA45C21AEF256100F0AB26 /* QYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QYViewController.m; sourceTree = "<group>"; };
+		CCEA45C41AEF256100F0AB26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCEA45CA1AEF256100F0AB26 /* TableViewCellHeightALTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewCellHeightALTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCEA45CB1AEF256100F0AB26 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CCEA45D31AEF256100F0AB26 /* TableViewCellHeightALTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCellHeightALTests-Info.plist"; sourceTree = "<group>"; };
+		CCEA45D51AEF256100F0AB26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCEA45D71AEF256100F0AB26 /* TableViewCellHeightALTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellHeightALTests.m; sourceTree = "<group>"; };
+		CCEA45E11AEF25D300F0AB26 /* QYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYTableViewCell.h; sourceTree = "<group>"; };
+		CCEA45E21AEF25D300F0AB26 /* QYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCEA45A61AEF256100F0AB26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA45AF1AEF256100F0AB26 /* CoreGraphics.framework in Frameworks */,
+				CCEA45B11AEF256100F0AB26 /* UIKit.framework in Frameworks */,
+				CCEA45AD1AEF256100F0AB26 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA45C71AEF256100F0AB26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA45CC1AEF256100F0AB26 /* XCTest.framework in Frameworks */,
+				CCEA45CE1AEF256100F0AB26 /* UIKit.framework in Frameworks */,
+				CCEA45CD1AEF256100F0AB26 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCEA45A01AEF256100F0AB26 = {
+			isa = PBXGroup;
+			children = (
+				CCEA45B21AEF256100F0AB26 /* TableViewCellHeightAL */,
+				CCEA45D11AEF256100F0AB26 /* TableViewCellHeightALTests */,
+				CCEA45AB1AEF256100F0AB26 /* Frameworks */,
+				CCEA45AA1AEF256100F0AB26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCEA45AA1AEF256100F0AB26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA45A91AEF256100F0AB26 /* TableViewCellHeightAL.app */,
+				CCEA45CA1AEF256100F0AB26 /* TableViewCellHeightALTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCEA45AB1AEF256100F0AB26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA45AC1AEF256100F0AB26 /* Foundation.framework */,
+				CCEA45AE1AEF256100F0AB26 /* CoreGraphics.framework */,
+				CCEA45B01AEF256100F0AB26 /* UIKit.framework */,
+				CCEA45CB1AEF256100F0AB26 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCEA45B21AEF256100F0AB26 /* TableViewCellHeightAL */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA45BB1AEF256100F0AB26 /* QYAppDelegate.h */,
+				CCEA45BC1AEF256100F0AB26 /* QYAppDelegate.m */,
+				CCEA45BE1AEF256100F0AB26 /* Main.storyboard */,
+				CCEA45C11AEF256100F0AB26 /* QYViewController.h */,
+				CCEA45C21AEF256100F0AB26 /* QYViewController.m */,
+				CCEA45C41AEF256100F0AB26 /* Images.xcassets */,
+				CCEA45B31AEF256100F0AB26 /* Supporting Files */,
+				CCEA45E11AEF25D300F0AB26 /* QYTableViewCell.h */,
+				CCEA45E21AEF25D300F0AB26 /* QYTableViewCell.m */,
+			);
+			path = TableViewCellHeightAL;
+			sourceTree = "<group>";
+		};
+		CCEA45B31AEF256100F0AB26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA45B41AEF256100F0AB26 /* TableViewCellHeightAL-Info.plist */,
+				CCEA45B51AEF256100F0AB26 /* InfoPlist.strings */,
+				CCEA45B81AEF256100F0AB26 /* main.m */,
+				CCEA45BA1AEF256100F0AB26 /* TableViewCellHeightAL-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCEA45D11AEF256100F0AB26 /* TableViewCellHeightALTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA45D71AEF256100F0AB26 /* TableViewCellHeightALTests.m */,
+				CCEA45D21AEF256100F0AB26 /* Supporting Files */,
+			);
+			path = TableViewCellHeightALTests;
+			sourceTree = "<group>";
+		};
+		CCEA45D21AEF256100F0AB26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCEA45D31AEF256100F0AB26 /* TableViewCellHeightALTests-Info.plist */,
+				CCEA45D41AEF256100F0AB26 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCEA45A81AEF256100F0AB26 /* TableViewCellHeightAL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEA45DB1AEF256100F0AB26 /* Build configuration list for PBXNativeTarget "TableViewCellHeightAL" */;
+			buildPhases = (
+				CCEA45A51AEF256100F0AB26 /* Sources */,
+				CCEA45A61AEF256100F0AB26 /* Frameworks */,
+				CCEA45A71AEF256100F0AB26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewCellHeightAL;
+			productName = TableViewCellHeightAL;
+			productReference = CCEA45A91AEF256100F0AB26 /* TableViewCellHeightAL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCEA45C91AEF256100F0AB26 /* TableViewCellHeightALTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCEA45DE1AEF256100F0AB26 /* Build configuration list for PBXNativeTarget "TableViewCellHeightALTests" */;
+			buildPhases = (
+				CCEA45C61AEF256100F0AB26 /* Sources */,
+				CCEA45C71AEF256100F0AB26 /* Frameworks */,
+				CCEA45C81AEF256100F0AB26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCEA45D01AEF256100F0AB26 /* PBXTargetDependency */,
+			);
+			name = TableViewCellHeightALTests;
+			productName = TableViewCellHeightALTests;
+			productReference = CCEA45CA1AEF256100F0AB26 /* TableViewCellHeightALTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCEA45A11AEF256100F0AB26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QY;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = hnqingyun.com;
+				TargetAttributes = {
+					CCEA45C91AEF256100F0AB26 = {
+						TestTargetID = CCEA45A81AEF256100F0AB26;
+					};
+				};
+			};
+			buildConfigurationList = CCEA45A41AEF256100F0AB26 /* Build configuration list for PBXProject "TableViewCellHeightAL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCEA45A01AEF256100F0AB26;
+			productRefGroup = CCEA45AA1AEF256100F0AB26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCEA45A81AEF256100F0AB26 /* TableViewCellHeightAL */,
+				CCEA45C91AEF256100F0AB26 /* TableViewCellHeightALTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCEA45A71AEF256100F0AB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA45C51AEF256100F0AB26 /* Images.xcassets in Resources */,
+				CCEA45B71AEF256100F0AB26 /* InfoPlist.strings in Resources */,
+				CCEA45C01AEF256100F0AB26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA45C81AEF256100F0AB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA45D61AEF256100F0AB26 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCEA45A51AEF256100F0AB26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA45BD1AEF256100F0AB26 /* QYAppDelegate.m in Sources */,
+				CCEA45E31AEF25D300F0AB26 /* QYTableViewCell.m in Sources */,
+				CCEA45B91AEF256100F0AB26 /* main.m in Sources */,
+				CCEA45C31AEF256100F0AB26 /* QYViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCEA45C61AEF256100F0AB26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEA45D81AEF256100F0AB26 /* TableViewCellHeightALTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCEA45D01AEF256100F0AB26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCEA45A81AEF256100F0AB26 /* TableViewCellHeightAL */;
+			targetProxy = CCEA45CF1AEF256100F0AB26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCEA45B51AEF256100F0AB26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEA45B61AEF256100F0AB26 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CCEA45BE1AEF256100F0AB26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEA45BF1AEF256100F0AB26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCEA45D41AEF256100F0AB26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCEA45D51AEF256100F0AB26 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCEA45D91AEF256100F0AB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCEA45DA1AEF256100F0AB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCEA45DC1AEF256100F0AB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewCellHeightAL/TableViewCellHeightAL-Prefix.pch";
+				INFOPLIST_FILE = "TableViewCellHeightAL/TableViewCellHeightAL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CCEA45DD1AEF256100F0AB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewCellHeightAL/TableViewCellHeightAL-Prefix.pch";
+				INFOPLIST_FILE = "TableViewCellHeightAL/TableViewCellHeightAL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CCEA45DF1AEF256100F0AB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TableViewCellHeightAL.app/TableViewCellHeightAL";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewCellHeightAL/TableViewCellHeightAL-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TableViewCellHeightALTests/TableViewCellHeightALTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CCEA45E01AEF256100F0AB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TableViewCellHeightAL.app/TableViewCellHeightAL";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewCellHeightAL/TableViewCellHeightAL-Prefix.pch";
+				INFOPLIST_FILE = "TableViewCellHeightALTests/TableViewCellHeightALTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCEA45A41AEF256100F0AB26 /* Build configuration list for PBXProject "TableViewCellHeightAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEA45D91AEF256100F0AB26 /* Debug */,
+				CCEA45DA1AEF256100F0AB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCEA45DB1AEF256100F0AB26 /* Build configuration list for PBXNativeTarget "TableViewCellHeightAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEA45DC1AEF256100F0AB26 /* Debug */,
+				CCEA45DD1AEF256100F0AB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCEA45DE1AEF256100F0AB26 /* Build configuration list for PBXNativeTarget "TableViewCellHeightALTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCEA45DF1AEF256100F0AB26 /* Debug */,
+				CCEA45E01AEF256100F0AB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCEA45A11AEF256100F0AB26 /* Project object */;
+}

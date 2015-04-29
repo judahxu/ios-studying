@@ -99,7 +99,7 @@
     //返回每一个元素
     
     QYCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    cell.nameLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
+    cell.nameLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     return cell;
     
 }

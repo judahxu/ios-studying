@@ -20,8 +20,7 @@
 @end
 
 @implementation QYLoginViewController
-- (IBAction)dismiss:(id)sender {
-}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

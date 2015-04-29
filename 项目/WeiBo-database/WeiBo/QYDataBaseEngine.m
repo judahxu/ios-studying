@@ -134,7 +134,7 @@ static NSArray *statusTableColumn;
     while ([result next]) {
         //将结果转化为字典
         NSDictionary *statusInfo = [result resultDictionary];
-        //转化为model并且保存
+        //转化为model并且保存  
         QYStatusModel *statusModel = [[QYStatusModel alloc] initWithDictionary:statusInfo];
         [modelArray addObject:statusModel];
     }
