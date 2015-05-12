@@ -19,6 +19,7 @@
     self.sourceLabel.text = status.source;
     self.contentText.text = status.text;
     self.reStatusContext.text = status.reStatus.reStatusText;
+    self.iconImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:status.user.profile_image_url]]];
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier

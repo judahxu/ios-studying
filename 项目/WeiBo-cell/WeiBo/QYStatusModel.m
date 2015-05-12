@@ -25,7 +25,6 @@
         
         self.user = [[QYUserModel alloc] initWithDictionary:userInfo];
         self.source = [self sourceWithString:statusInfo[kStatusSource]];
-        
         NSString *dateString = statusInfo[kStatusCreateTime];
         
         //将时间字符串转化为时间

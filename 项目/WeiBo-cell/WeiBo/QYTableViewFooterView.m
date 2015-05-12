@@ -22,8 +22,9 @@
 
 -(void)awakeFromNib{
     //设置背景视图
-    self.backgroundView = [[UIView alloc] init];
-    self.backgroundView.backgroundColor = [UIColor whiteColor];
+    //self.backgroundView = [[UIView alloc] init];
+    //self.backgroundView.backgroundColor = [UIColor whiteColor];
+    self.contentView.backgroundColor = [UIColor whiteColor];
 }
 
 -(void)setStatusModel:(QYStatusModel *)status{

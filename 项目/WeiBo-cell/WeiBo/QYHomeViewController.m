@@ -75,7 +75,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)loadData{
+-(void)loadlocalData{
     //模拟从网络请求数据
     //获取文件路径
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"statues" ofType:nil];
@@ -135,6 +135,38 @@
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
     }];
+    
+}
+//从网络请求数据
+-(void)loadData{
+    //获取access_token
+    NSMutableDictionary *dic = [[QYAccountModel accountModel] requestParameters];
+    //根据是否为空，是否可以请求
+    if (!dic) {
+        return;
+    }
+    //请求管理者
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:@"https://api.weibo.com/2/statuses/home_timeline.json" parameters:dic success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        //从返回的结果中，取出微博列表
+        NSArray *status = responseObject[@"statuses"];
+        
+        NSMutableArray *statusModels = [NSMutableArray arrayWithCapacity:status.count];
+        for (NSDictionary *statusInfo in status) {
+            //        初始化model
+            QYStatusModel *statusModel = [[QYStatusModel alloc] initWithDictionary:statusInfo];
+            [statusModels addObject:statusModel];
+        }
+        
+        self.statusesArray = statusModels;
+        //更新UI
+        [self.tableView reloadData];
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+    
     
 }
 

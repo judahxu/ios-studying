@@ -16,9 +16,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    
+//    NSDictionary  *filepath = NSHomeDirectory();
+//    NSLog(@"%@",filepath);
     self.window.rootViewController = [QYViewControllerManager getRootViewVC];
-    
     [self.window makeKeyAndVisible];
     return YES;
 }

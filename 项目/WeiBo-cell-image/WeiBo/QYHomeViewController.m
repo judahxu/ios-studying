@@ -1,0 +1,217 @@
+//
+//  QYHomeViewController.m
+//  WeiBo
+//
+//  Created by qingyun on 15-4-20.
+//  Copyright (c) 2015年 hnqingyun.com. All rights reserved.
+//
+
+#import "QYHomeViewController.h"
+#import "QYAccountModel.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "QYStatusTableViewCell.h"
+#import "QYStatusModel.h"
+#import "QYUserModel.h"
+#import "QYDataBaseEngine.h"
+#import "QYTableViewFooterView.h"
+
+
+
+@interface QYHomeViewController ()
+
+@property (nonatomic, strong) NSArray *statusesArray;
+
+@property (nonatomic, strong) QYStatusTableViewCell *prototypeCell;//用于计算cell高度
+
+@end
+
+@implementation QYHomeViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+//        self.title = @"发现";
+        
+        UIImage *image = [[UIImage imageNamed:@"12"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:image selectedImage:image];
+        
+        NSDictionary *att = @{NSFontAttributeName: [UIFont systemFontOfSize:17], NSForegroundColorAttributeName: [UIColor orangeColor]};
+//
+        [self.tabBarItem setTitleTextAttributes:att forState:UIControlStateNormal];
+        
+    }
+    return self;
+}
+
+
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    //查询本地数据，先显示
+    self.statusesArray = [QYDataBaseEngine statusArrayFromDataBase];
+    
+    //添加观察者，档登陆成功后请求最新的数据
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadData) name:kLoginSuccess object:nil];
+    
+    self.prototypeCell = [self.tableView dequeueReusableCellWithIdentifier:@"statusCell"];
+    
+    //注册table footer view
+    UINib *nib = [UINib nibWithNibName:@"QYStatusFooterView" bundle:[NSBundle mainBundle]];
+    [self.tableView registerNib:nib forHeaderFooterViewReuseIdentifier:@"QYTableViewFooterView"];
+    
+    //请求网络数据
+    [self loadData];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)loadData{
+    //模拟从网络请求数据
+    //获取文件路径
+//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"statues" ofType:nil];
+//    
+//    NSString *statusdString = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+//    //转化为二进制数据
+//    NSData *statusData = [statusdString dataUsingEncoding:NSUTF8StringEncoding];
+//    //解析位json对象
+//    NSDictionary *statusDic = [NSJSONSerialization JSONObjectWithData:statusData options:0 error:nil];
+//    
+//    //从返回的结果中，取出微博列表
+//    NSArray *status = statusDic[@"statuses"];
+//    
+//    //可变数组，保存创建的model
+//    NSMutableArray *statusModels = [NSMutableArray arrayWithCapacity:status.count];
+//    for (NSDictionary *statusInfo in status) {
+////        初始化model
+//        QYStatusModel *statusModel = [[QYStatusModel alloc] initWithDictionary:statusInfo];
+//        [statusModels addObject:statusModel];
+//    }
+//    
+//    self.statusesArray = statusModels;
+//    //更新UI
+//    [self.tableView reloadData];
+//
+//    //保存到数据库
+//    [QYDataBaseEngine saveStatusToDatabase:status];
+//    
+//    
+//    return;
+    
+    
+    //获取access_token
+    NSMutableDictionary *dic = [[QYAccountModel accountModel] requestParameters];
+    //根据是否为空，是否可以请求
+    if (!dic) {
+        return;
+    }
+    //请求管理者
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:@"https://api.weibo.com/2/statuses/home_timeline.json" parameters:dic success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        //从返回的结果中，取出微博列表
+        NSArray *status = responseObject[@"statuses"];
+        
+        NSMutableArray *statusModels = [NSMutableArray arrayWithCapacity:status.count];
+        for (NSDictionary *statusInfo in status) {
+            //        初始化model
+            QYStatusModel *statusModel = [[QYStatusModel alloc] initWithDictionary:statusInfo];
+            [statusModels addObject:statusModel];
+        }
+        
+        self.statusesArray = statusModels;
+        //更新UI
+        [self.tableView reloadData];
+        [QYDataBaseEngine saveStatusToDatabase:status];
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+}
+
+#pragma mark - action
+
+-(void)reStatus:(id)sender{
+    NSLog(@"%ld", [sender tag]);
+}
+
+-(void)comments:(id)sender{
+    
+}
+
+-(void)star:(id)sender{
+    
+}
+
+
+#pragma mark - table View data source delegate
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    //根据section区分微博
+    return self.statusesArray.count;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    QYStatusTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"statusCell" forIndexPath:indexPath];
+    //绑定cell上的内容
+    QYStatusModel *status = self.statusesArray[indexPath.section];
+
+    //将statusmodel绑定到cell上
+    [cell setStatusModel:status];
+    
+    return cell;
+    
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    QYStatusTableViewCell *cell = self.prototypeCell;
+    
+    //取出要显示的数据
+    QYStatusModel *model = self.statusesArray[indexPath.section];
+//    [cell setStatusModel:model];
+//    
+//    //根据绑定的内容，以及约束，预估出需要的size
+//    CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+//    
+//    return size.height + 1;
+    
+//    通过cell计算cell显示需要的高度
+    return [cell cellHeight4StatusModel:model];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 30.f;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    QYTableViewFooterView *footerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"QYTableViewFooterView"];
+    
+    //绑定内容
+    [footerView setStatusModel:[self.statusesArray objectAtIndex:section]];
+    
+    //对按钮绑定事件
+    [footerView.reStatus addTarget:self action:@selector(reStatus:) forControlEvents:UIControlEventTouchUpInside];
+    [footerView.reStatus setTag:section];
+    [footerView.comments addTarget:self action:@selector(comments:) forControlEvents:UIControlEventTouchUpInside];
+    [footerView.star addTarget:self action:@selector(star:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
+    return footerView;
+}
+
+@end
