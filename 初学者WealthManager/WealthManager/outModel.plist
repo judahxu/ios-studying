@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>定期支出</key>
+	<array>
+		<string>水电</string>
+		<string>物业</string>
+		<string>燃气</string>
+		<string>保险</string>
+		<string>还贷</string>
+		<string>其他</string>
+	</array>
+	<key>日常支出</key>
+	<array>
+		<string>买菜</string>
+		<string>下馆子</string>
+		<string>日常购物</string>
+		<string>买衣服</string>
+		<string>礼金</string>
+		<string>小病</string>
+		<string>电子产品</string>
+		<string>其他</string>
+	</array>
+	<key>大额支出</key>
+	<array>
+		<string>大病治疗</string>
+		<string>购车</string>
+		<string>购房</string>
+		<string>购置大型保险</string>
+		<string>大额投资</string>
+		<string>其他</string>
+	</array>
+</dict>
+</plist>

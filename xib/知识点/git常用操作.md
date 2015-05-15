@@ -1,10 +1,11 @@
-# Git操作	- By 尤明
+# Git操作	
 ## 基本操作
 
 1. 初始化仓库
 	
 	- git init
 2. 配置作者信息
+    - git config --list
 	- git config --global user.email "youremail@corp.com"
 	- git config --global user.name "yourname"
 	co 
