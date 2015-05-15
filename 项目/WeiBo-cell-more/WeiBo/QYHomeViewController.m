@@ -303,7 +303,7 @@
     return cell;
     
 }
-
+#pragma 下拉刷新
 -(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     //根据将要显示的cell，判断剩余的未刷新的cell个数
     int count =  self.statusesArray.count - (indexPath.section + 1);

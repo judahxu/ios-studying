@@ -48,6 +48,7 @@
 		CC560E0B1AE4F8C80017F1B2 /* QYMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC560E0A1AE4F8C80017F1B2 /* QYMessageTableViewController.m */; };
 		CC560E111AE4F8FB0017F1B2 /* QYFindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC560E101AE4F8FB0017F1B2 /* QYFindTableViewController.m */; };
 		CC560E141AE4F90A0017F1B2 /* QYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC560E131AE4F90A0017F1B2 /* QYMeViewController.m */; };
+		CC790E611B024B2B00099B10 /* qrcode_border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC790E631B024B2B00099B10 /* qrcode_border@2x.png */; };
 		CCBF75B71AEB8C4B00F7254A /* QYSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBF75B61AEB8C4B00F7254A /* QYSettingTableViewController.m */; };
 		CCD36EB51AF8B10C0015411F /* QYCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD36EB41AF8B10C0015411F /* QYCodeViewController.m */; };
 		CCD36EB71AF8B1530015411F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD36EB61AF8B1530015411F /* AVFoundation.framework */; };
@@ -59,7 +60,6 @@
 		CCD36EE51AF8C1A40015411F /* popover_icon_qrcode@3x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD36EBF1AF8C1A40015411F /* popover_icon_qrcode@3x 2.png */; };
 		CCD36EE61AF8C1A40015411F /* popover_icon_qrcode@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD36EC01AF8C1A40015411F /* popover_icon_qrcode@3x.png */; };
 		CCD36EE71AF8C1A40015411F /* qrcode_border@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD36EC11AF8C1A40015411F /* qrcode_border@2x 2.png */; };
-		CCD36EE81AF8C1A40015411F /* qrcode_border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD36EC21AF8C1A40015411F /* qrcode_border@2x.png */; };
 		CCD36EE91AF8C1A40015411F /* qrcode_button_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD36EC31AF8C1A40015411F /* qrcode_button_background@2x.png */; };
 		CCD36EEA1AF8C1A40015411F /* qrcode_embeddedimage_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD36EC41AF8C1A40015411F /* qrcode_embeddedimage_shadow@2x.png */; };
 		CCD36EEB1AF8C1A40015411F /* qrcode_navigationbar_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD36EC51AF8C1A40015411F /* qrcode_navigationbar_background@2x.png */; };
@@ -189,6 +189,7 @@
 		CC560E121AE4F90A0017F1B2 /* QYMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYMeViewController.h; sourceTree = "<group>"; };
 		CC560E131AE4F90A0017F1B2 /* QYMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYMeViewController.m; sourceTree = "<group>"; };
 		CC560E191AE4FF3B0017F1B2 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		CC790E621B024B2B00099B10 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/qrcode_border@2x.png"; sourceTree = "<group>"; };
 		CCBF75B51AEB8C4B00F7254A /* QYSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYSettingTableViewController.h; sourceTree = "<group>"; };
 		CCBF75B61AEB8C4B00F7254A /* QYSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYSettingTableViewController.m; sourceTree = "<group>"; };
 		CCD36EB31AF8B10C0015411F /* QYCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYCodeViewController.h; sourceTree = "<group>"; };
@@ -202,7 +203,6 @@
 		CCD36EBF1AF8C1A40015411F /* popover_icon_qrcode@3x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover_icon_qrcode@3x 2.png"; sourceTree = "<group>"; };
 		CCD36EC01AF8C1A40015411F /* popover_icon_qrcode@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover_icon_qrcode@3x.png"; sourceTree = "<group>"; };
 		CCD36EC11AF8C1A40015411F /* qrcode_border@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_border@2x 2.png"; sourceTree = "<group>"; };
-		CCD36EC21AF8C1A40015411F /* qrcode_border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_border@2x.png"; sourceTree = "<group>"; };
 		CCD36EC31AF8C1A40015411F /* qrcode_button_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_button_background@2x.png"; sourceTree = "<group>"; };
 		CCD36EC41AF8C1A40015411F /* qrcode_embeddedimage_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_embeddedimage_shadow@2x.png"; sourceTree = "<group>"; };
 		CCD36EC51AF8C1A40015411F /* qrcode_navigationbar_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qrcode_navigationbar_background@2x.png"; sourceTree = "<group>"; };
@@ -571,7 +571,7 @@
 				CCD36EBF1AF8C1A40015411F /* popover_icon_qrcode@3x 2.png */,
 				CCD36EC01AF8C1A40015411F /* popover_icon_qrcode@3x.png */,
 				CCD36EC11AF8C1A40015411F /* qrcode_border@2x 2.png */,
-				CCD36EC21AF8C1A40015411F /* qrcode_border@2x.png */,
+				CC790E631B024B2B00099B10 /* qrcode_border@2x.png */,
 				CCD36EC31AF8C1A40015411F /* qrcode_button_background@2x.png */,
 				CCD36EC41AF8C1A40015411F /* qrcode_embeddedimage_shadow@2x.png */,
 				CCD36EC51AF8C1A40015411F /* qrcode_navigationbar_background@2x.png */,
@@ -744,7 +744,7 @@
 				CCD36EF31AF8C1A40015411F /* qrcode_scanline_qrcode@3x.png in Resources */,
 				CCD36F051AF8C1A40015411F /* qrcode_tip_background@2x.png in Resources */,
 				CC54F5F41AEC7B60005CBBDC /* statues in Resources */,
-				CCD36EE81AF8C1A40015411F /* qrcode_border@2x.png in Resources */,
+				CC790E611B024B2B00099B10 /* qrcode_border@2x.png in Resources */,
 				CCD36EFE1AF8C1A40015411F /* qrcode_tabbar_icon_qrcode@2x.png in Resources */,
 				CCD36EFA1AF8C1A40015411F /* qrcode_tabbar_icon_barcode_highlighted@2x.png in Resources */,
 				CCD36EE11AF8C1A40015411F /* findfriends_qrcode_scanbutton_highlighted@2x.png in Resources */,
@@ -881,6 +881,14 @@
 				CC560DEF1AE4F2500017F1B2 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CC790E631B024B2B00099B10 /* qrcode_border@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC790E621B024B2B00099B10 /* en */,
+			);
+			name = "qrcode_border@2x.png";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
